@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-11-19 周六 11:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org595b0c2">1. 敬业</a>
+<ul>
+<li><a href="#org04a32b5">1.1. 专业执着，精益求精</a>
+<ul>
+<li><a href="#org8908f64">1.1.1. 今天的事不推到明天，上班时间只做与工作有关的事情；</a></li>
+<li><a href="#org8fe315c">1.1.2. 遵循必要的工作流程，没有因工作失职而造成的重复错误；</a></li>
+<li><a href="#org237f2e1">1.1.3. 能根据轻重缓急来正确安排工作优先级，做正确的事；</a></li>
+<li><a href="#orgd10fc3d">1.1.4. 遵循但不拘泥于工作流程，化繁为简，用较小的投入获得较大的工作成果。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org24399f4">2. 创建</a>
+<ul>
+<li><a href="#org96453b5">2.1. 迎接变化，勇于创新</a>
+<ul>
+<li><a href="#org5ca3511">2.1.1. 创新的目的是为用户创造介值；</a></li>
+<li><a href="#orge39e91c">2.1.2. 人人皆可创新，事事皆可创新；</a></li>
+<li><a href="#org9e7ea8a">2.1.3. 敢于突破，勇于尝试，不惧尝试，善于总结；</a></li>
+<li><a href="#org9688d02">2.1.4. 创造变化，并带来绩效突破性的提高。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc80f505">3. 合作</a>
+<ul>
+<li><a href="#org83ed578">3.1. 共亨共担，平凡人做非凡事</a>
+<ul>
+<li><a href="#org49f8839">3.1.1. 积级容入团队，乐于接受同事的帮助，不将个人喜好带入工作；</a></li>
+<li><a href="#orgb42d648">3.1.2. 积极主动分亨专业知识与工作经验，主动给予同事以必要的帮助，与同事共同成长；</a></li>
+<li><a href="#org076f005">3.1.3. 具备大局观，善于利用团队的力量解决问题和困难，共同达成目标；</a></li>
+<li><a href="#orge9bbcf0">3.1.4. 决策前积极发表建设性意见，充分参与团队讨论；决策后，无论个人是否有异议，必须从言行上予以支持和执行。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org55b7c59">4. 进取</a>
+<ul>
+<li><a href="#org2535e84">4.1. 乐观向上，只做第一</a>
+<ul>
+<li><a href="#org0bc3ab8">4.1.1. 喜观自己的工作，认同XXXX的企业文化；尽职尽责，高效执行；</a></li>
+<li><a href="#org81eafc8">4.1.2. 勇于承担责任，主动迎接新的任务和挑战；</a></li>
+<li><a href="#orgb8f8f58">4.1.3. 保持好奇心，持续学习，不断完善，不断设定更高的目标，追求卓越；</a></li>
+<li><a href="#orgc4d71ea">4.1.4. 面对困难和挫折，能自动调整，自我激励，并正面影响和带动同事，以小我成就大我。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb8812c6">5. 诚信</a>
+<ul>
+<li><a href="#org0f4d301">5.1. 试实正真，言行坦荡</a>
+<ul>
+<li><a href="#org56a2b1e">5.1.1. 遵守国家法律和公司制度，绝不触碰企业高压线；</a></li>
+<li><a href="#org83bd77d">5.1.2. 做人德为先，坚持公正、诚实、正直等为人处事的重要准则；</a></li>
+<li><a href="#org71f0898">5.1.3. 用正直的力量对周围产生积极的影响，对损害公司利益的不诚信行为正确有效的制止；</a></li>
+<li><a href="#org9c3b07d">5.1.4. 通过正确的渠道和流程，准确表达自己的观点和建议；表达意见或讨论时充分体现“对事不对人”原则。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5007149">6. 用户第一</a>
+<ul>
+<li><a href="#org0a01ee2">6.1. 用户为先，价值为王</a>
+<ul>
+<li><a href="#org86a8aaa">6.1.1. 一切以用户价值为依归；</a></li>
+<li><a href="#orged13167">6.1.2. 注重长远发展，不因商业利益伤害用户价值；</a></li>
+<li><a href="#orgc36fa98">6.1.3. 关注并深刻理解用户需求，不断以卓越的产品和服务满足用户需求；</a></li>
+<li><a href="#org3e24a8f">6.1.4. 重视与用户的情感沟通，尊重用户感受，与用户共同成长。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org595b0c2" class="outline-2">
+<h2 id="org595b0c2"><span class="section-number-2">1</span> 敬业</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-org04a32b5" class="outline-3">
+<h3 id="org04a32b5"><span class="section-number-3">1.1</span> 专业执着，精益求精</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-org8908f64" class="outline-4">
+<h4 id="org8908f64"><span class="section-number-4">1.1.1</span> 今天的事不推到明天，上班时间只做与工作有关的事情；</h4>
+</div>
+<div id="outline-container-org8fe315c" class="outline-4">
+<h4 id="org8fe315c"><span class="section-number-4">1.1.2</span> 遵循必要的工作流程，没有因工作失职而造成的重复错误；</h4>
+</div>
+<div id="outline-container-org237f2e1" class="outline-4">
+<h4 id="org237f2e1"><span class="section-number-4">1.1.3</span> 能根据轻重缓急来正确安排工作优先级，做正确的事；</h4>
+</div>
+<div id="outline-container-orgd10fc3d" class="outline-4">
+<h4 id="orgd10fc3d"><span class="section-number-4">1.1.4</span> 遵循但不拘泥于工作流程，化繁为简，用较小的投入获得较大的工作成果。</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org24399f4" class="outline-2">
+<h2 id="org24399f4"><span class="section-number-2">2</span> 创建</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-org96453b5" class="outline-3">
+<h3 id="org96453b5"><span class="section-number-3">2.1</span> 迎接变化，勇于创新</h3>
+<div class="outline-text-3" id="text-2-1">
+</div><div id="outline-container-org5ca3511" class="outline-4">
+<h4 id="org5ca3511"><span class="section-number-4">2.1.1</span> 创新的目的是为用户创造介值；</h4>
+</div>
+<div id="outline-container-orge39e91c" class="outline-4">
+<h4 id="orge39e91c"><span class="section-number-4">2.1.2</span> 人人皆可创新，事事皆可创新；</h4>
+</div>
+<div id="outline-container-org9e7ea8a" class="outline-4">
+<h4 id="org9e7ea8a"><span class="section-number-4">2.1.3</span> 敢于突破，勇于尝试，不惧尝试，善于总结；</h4>
+</div>
+<div id="outline-container-org9688d02" class="outline-4">
+<h4 id="org9688d02"><span class="section-number-4">2.1.4</span> 创造变化，并带来绩效突破性的提高。</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc80f505" class="outline-2">
+<h2 id="orgc80f505"><span class="section-number-2">3</span> 合作</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-org83ed578" class="outline-3">
+<h3 id="org83ed578"><span class="section-number-3">3.1</span> 共亨共担，平凡人做非凡事</h3>
+<div class="outline-text-3" id="text-3-1">
+</div><div id="outline-container-org49f8839" class="outline-4">
+<h4 id="org49f8839"><span class="section-number-4">3.1.1</span> 积级容入团队，乐于接受同事的帮助，不将个人喜好带入工作；</h4>
+</div>
+<div id="outline-container-orgb42d648" class="outline-4">
+<h4 id="orgb42d648"><span class="section-number-4">3.1.2</span> 积极主动分亨专业知识与工作经验，主动给予同事以必要的帮助，与同事共同成长；</h4>
+</div>
+<div id="outline-container-org076f005" class="outline-4">
+<h4 id="org076f005"><span class="section-number-4">3.1.3</span> 具备大局观，善于利用团队的力量解决问题和困难，共同达成目标；</h4>
+</div>
+<div id="outline-container-orge9bbcf0" class="outline-4">
+<h4 id="orge9bbcf0"><span class="section-number-4">3.1.4</span> 决策前积极发表建设性意见，充分参与团队讨论；决策后，无论个人是否有异议，必须从言行上予以支持和执行。</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org55b7c59" class="outline-2">
+<h2 id="org55b7c59"><span class="section-number-2">4</span> 进取</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org2535e84" class="outline-3">
+<h3 id="org2535e84"><span class="section-number-3">4.1</span> 乐观向上，只做第一</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-org0bc3ab8" class="outline-4">
+<h4 id="org0bc3ab8"><span class="section-number-4">4.1.1</span> 喜观自己的工作，认同XXXX的企业文化；尽职尽责，高效执行；</h4>
+</div>
+<div id="outline-container-org81eafc8" class="outline-4">
+<h4 id="org81eafc8"><span class="section-number-4">4.1.2</span> 勇于承担责任，主动迎接新的任务和挑战；</h4>
+</div>
+<div id="outline-container-orgb8f8f58" class="outline-4">
+<h4 id="orgb8f8f58"><span class="section-number-4">4.1.3</span> 保持好奇心，持续学习，不断完善，不断设定更高的目标，追求卓越；</h4>
+</div>
+<div id="outline-container-orgc4d71ea" class="outline-4">
+<h4 id="orgc4d71ea"><span class="section-number-4">4.1.4</span> 面对困难和挫折，能自动调整，自我激励，并正面影响和带动同事，以小我成就大我。</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb8812c6" class="outline-2">
+<h2 id="orgb8812c6"><span class="section-number-2">5</span> 诚信</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-org0f4d301" class="outline-3">
+<h3 id="org0f4d301"><span class="section-number-3">5.1</span> 试实正真，言行坦荡</h3>
+<div class="outline-text-3" id="text-5-1">
+</div><div id="outline-container-org56a2b1e" class="outline-4">
+<h4 id="org56a2b1e"><span class="section-number-4">5.1.1</span> 遵守国家法律和公司制度，绝不触碰企业高压线；</h4>
+</div>
+<div id="outline-container-org83bd77d" class="outline-4">
+<h4 id="org83bd77d"><span class="section-number-4">5.1.2</span> 做人德为先，坚持公正、诚实、正直等为人处事的重要准则；</h4>
+</div>
+<div id="outline-container-org71f0898" class="outline-4">
+<h4 id="org71f0898"><span class="section-number-4">5.1.3</span> 用正直的力量对周围产生积极的影响，对损害公司利益的不诚信行为正确有效的制止；</h4>
+</div>
+<div id="outline-container-org9c3b07d" class="outline-4">
+<h4 id="org9c3b07d"><span class="section-number-4">5.1.4</span> 通过正确的渠道和流程，准确表达自己的观点和建议；表达意见或讨论时充分体现“对事不对人”原则。</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5007149" class="outline-2">
+<h2 id="org5007149"><span class="section-number-2">6</span> 用户第一</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-org0a01ee2" class="outline-3">
+<h3 id="org0a01ee2"><span class="section-number-3">6.1</span> 用户为先，价值为王</h3>
+<div class="outline-text-3" id="text-6-1">
+</div><div id="outline-container-org86a8aaa" class="outline-4">
+<h4 id="org86a8aaa"><span class="section-number-4">6.1.1</span> 一切以用户价值为依归；</h4>
+</div>
+<div id="outline-container-orged13167" class="outline-4">
+<h4 id="orged13167"><span class="section-number-4">6.1.2</span> 注重长远发展，不因商业利益伤害用户价值；</h4>
+</div>
+<div id="outline-container-orgc36fa98" class="outline-4">
+<h4 id="orgc36fa98"><span class="section-number-4">6.1.3</span> 关注并深刻理解用户需求，不断以卓越的产品和服务满足用户需求；</h4>
+</div>
+<div id="outline-container-org3e24a8f" class="outline-4">
+<h4 id="org3e24a8f"><span class="section-number-4">6.1.4</span> 重视与用户的情感沟通，尊重用户感受，与用户共同成长。</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2016-11-19 周六 11:01</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
